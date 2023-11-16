@@ -1,11 +1,11 @@
-import './App.css'
+import './App.scss';
 
 function App() {
   return (
     <>
-      <></>
+      <>our team</>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
