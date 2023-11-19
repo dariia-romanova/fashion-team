@@ -1,14 +1,16 @@
-body, a, h1, h2, p {
+body, a, h1, h2, p, div {
   margin: 0;
   padding: 0;
   text-decoration: none;
-
-  font-family: Lora, serif;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 400;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #E2E2E0;
+  min-height: 100vh;
+
+  font-family: Lora, serif;
+  font-size: 16px;
+  line-height: auto;
+  font-weight: 400;
 }

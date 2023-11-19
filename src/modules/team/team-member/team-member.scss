@@ -1,0 +1,85 @@
+$colors : (
+  1: #D3EF23,
+  2: #FF73B6,
+  3: #73CDFF,
+);
+
+.member {
+  height: 100%;
+  display: flex;
+}
+
+.member__photo {
+  position: absolute;
+  z-index: -2;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+
+}
+
+.member__gradient {
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+}
+
+@each $key, $color in $colors {
+  .member__gradient--left--#{$key} {
+    background-image: radial-gradient(ellipse at left bottom, #{$color} 30%, #{$color}00 70%);
+    width: 1000px;
+    height: 1000px;
+    bottom: 0;
+    left: 0;
+  }
+
+  .member__gradient--right--#{$key} {
+    background-image: radial-gradient(ellipse at right center, #{$color} 10%, #{$color}00 70%);
+    width: 600px;
+    height: 900px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.member__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.member__right-column {
+  align-items: end;
+  max-width: 360px;
+}
+
+.member__title {
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.member__number {
+  font-size: 140px;
+  font-weight: 600;
+}
+
+.member__name {
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 1.2;
+  word-spacing: 100vw;
+}
+
+.member__position {
+  font-size: 42px;
+  font-weight: 400;
+}
+
+.member__description {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}

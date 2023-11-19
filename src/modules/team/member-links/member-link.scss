@@ -1,0 +1,18 @@
+.member-link {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  align-items: end;
+}
+
+.member-link__number {
+  width: max-content;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.member-link__photo {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
